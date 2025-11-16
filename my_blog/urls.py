@@ -1,6 +1,10 @@
 from django.urls import path
-from .views import home_page_view
+from .import views
 
 urlpatterns = [
+<<<<<<< HEAD
     path('', home_page_view),
+=======
+    path('', views.PostList.as_view(), name='home'),
+>>>>>>> workingbranch
 ]
