@@ -1,0 +1,29 @@
+[
+  {
+    "model": "my_blog.post",
+    "pk": 1,
+    "fields": {
+      "title": "A Sunny Day Reflection",
+      "content":  "There’s something magical about a sunny day — the way the light dances through the trees, the warmth that wraps around you like a hug, and the sudden urge to pause, breathe, and just be. Today’s sunshine feels like nature’s way of saying, “You’ve got this.”\nWhether it’s a walk in the park, coffee on the balcony, or chasing shadows with your dog — soak it in. Let the light recharge you. Let the sky remind you that even after the grey, the blue always returns.\n#SunnyVibes #GratefulMoments #VitaminDGlow",
+      "author": 1,
+      "created_on": "2025-11-16T12:31:00Z",
+      "updated_on": "2025-11-16T12:31:00Z",
+      "status": 1
+      "excerpt" :  "There’s something magical about a sunny day — the way the light dances through the trees, the warmth that wraps around you like a hug, and the sudden urge to pause, breathe, and just be."
+    }
+  },
+
+  {
+    "model": "my_blog.post",
+    "pk": 2,
+    "fields": {
+      "title": "A Sunny Day Reflection",
+      "content":  "There’s something magical about a sunny day — the way the light dances through the trees, the warmth that wraps around you like a hug, and the sudden urge to pause, breathe, and just be. Today’s sunshine feels like nature’s way of saying, “You’ve got this.” Whether it’s a walk in the park, coffee on the balcony, or chasing shadows with your dog — soak it in. Let the light recharge you. Let the sky remind you that even after the grey, the blue always returns. #SunnyVibes #GratefulMoments #VitaminDGlowy",
+      "author": 1,
+      "created_on": "2025-11-16T12:31:00Z",
+      "updated_on": "2025-11-16T12:31:00Z",
+      "status": 1
+    }
+  }
+]
+
