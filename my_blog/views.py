@@ -2,12 +2,11 @@ from django.shortcuts import render
 from django.views import generic
 from .models import Post, Comment, Category, Like
 
-
-# Create your views here.
 # Post list view
 class PostList(generic.ListView):
     queryset = Post.objects.all()
-    template_name = "post_list.html"
+    template_name = "blog/index.html"
+    paginate_by = 2
 
 
 # Comment list view

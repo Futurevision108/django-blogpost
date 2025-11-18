@@ -1,29 +1,92 @@
 [
   {
     "model": "my_blog.post",
-    "pk": 1,
+    "pk": null,
     "fields": {
       "title": "A Sunny Day Reflection",
+      "slug": "A-Sunny-Day-Reflection",
       "content":  "There’s something magical about a sunny day — the way the light dances through the trees, the warmth that wraps around you like a hug, and the sudden urge to pause, breathe, and just be. Today’s sunshine feels like nature’s way of saying, “You’ve got this.”\nWhether it’s a walk in the park, coffee on the balcony, or chasing shadows with your dog — soak it in. Let the light recharge you. Let the sky remind you that even after the grey, the blue always returns.\n#SunnyVibes #GratefulMoments #VitaminDGlow",
       "author": 1,
       "created_on": "2025-11-16T12:31:00Z",
       "updated_on": "2025-11-16T12:31:00Z",
+      "excerpt" :  "There’s something magical about a sunny day — the way the light dances through the trees, the warmth that wraps around you like a hug, and the sudden urge to pause, breathe, and just be.",
       "status": 1
-      "excerpt" :  "There’s something magical about a sunny day — the way the light dances through the trees, the warmth that wraps around you like a hug, and the sudden urge to pause, breathe, and just be."
+
     }
   },
 
   {
     "model": "my_blog.post",
-    "pk": 2,
+    "pk": null,
     "fields": {
-      "title": "A Sunny Day Reflection",
-      "content":  "There’s something magical about a sunny day — the way the light dances through the trees, the warmth that wraps around you like a hug, and the sudden urge to pause, breathe, and just be. Today’s sunshine feels like nature’s way of saying, “You’ve got this.” Whether it’s a walk in the park, coffee on the balcony, or chasing shadows with your dog — soak it in. Let the light recharge you. Let the sky remind you that even after the grey, the blue always returns. #SunnyVibes #GratefulMoments #VitaminDGlowy",
+      "title": "The Heart of Celebration",
+      "slug": "The-Heart-of-Celebration",
+      "content":  "Celebration is more than a party — it’s a pause to honour life’s moments, big or small. Whether it’s a birthday, a festival, a personal win, or simply making it through a tough week, celebration reminds us to be present, grateful, and connected. In a world that often rushes forward, taking time to celebrate helps us reflect on how far we’ve come. It’s a chance to gather with others, share laughter, and create memories that last far beyond the moment. So light a candle, raise a toast, dance to your favourite song — whatever celebration looks like for you, embrace it fully. Because every milestone, no matter how small, deserves to be honoure",
       "author": 1,
-      "created_on": "2025-11-16T12:31:00Z",
-      "updated_on": "2025-11-16T12:31:00Z",
+      "created_on": "2025-11-16T10:03:00Z",
+      "updated_on": "2025-11-16T10:03:00Z",
+      "excerpt" :  "Celebrate the moment, not just the milestone. Every joy — big or small — deserves to shine..",
+      "status": 1
+    }
+  },
+  {
+    "model": "my_blog.post",
+    "pk": null,
+    "fields": {
+      "title": "Embracing the Journey of Continuous Learning",
+      "slug": "Embracing-the-Journey-of-Continuous-Learning",
+      "content": "Earning doesn’t end with a diploma — it’s a lifelong adventure. In a world that’s constantly evolving, the ability to keep growing, adapting, and exploring new ideas is one of our greatest strengths. Whether it’s picking up a new skill, reading a thought-provoking book, or simply asking better questions, continuous learning keeps our minds sharp and our perspectives fresh. It fuels creativity, deepens understanding, and opens doors we didn’t even know existed. The best part? You don’t need a classroom. Podcasts, online courses, conversations, mistakes — they’re all part of the curriculum. Every day offers a chance to learn something new, if we’re curious enough to notice. So stay curious. Stay humble. Keep learning — because the more we grow, the more we realize how much more there is to discover.",
+      "author": 1,
+      "created_on": "2025-11-16T10:06:00Z",
+      "updated_on": "2025-11-16T10:06:00Z",
+      "excerpt" :  "Learning never stops — and that’s the magic. Stay curious, keep growing, and let every day teach you something new.",
+      "status": 1
+    }
+
+  },
+  {
+    "model": "my_blog.post",
+    "pk": null,
+    "fields": {
+      "title": "Sunshine Therapy ",
+     "slug": "sunshine-therapy",
+      "content":  "There’s something magical about a sunny day — the way the light dances through the trees, the warmth that wraps around you like a hug, and the sudden urge to pause, breathe, and just . Today’s sunshine feels like nature’s way of saying, “You’ve got this.” Whether it’s a walk in the park, coffee on the balcony, or chasing shadows with your dog — soak it in. Let the light recharge you. Let the sky remind you that even after the grey, the blue always returns. #SunnyVibes #GratefulMoments #VitaminDGlow",
+      "author": 1,
+      "created_on": "2025-11-16T10:10:00Z",
+      "updated_on": "2025-11-16T10:10:00Z",
+      "excerpt" :  "Sunshine State of Mind The sky’s showing off, the breeze is flirting, and the sun is giving main character energy. Whether it’s a walk, a window seat, or just a moment to pause — today is a reminder that light always finds its way back. Soak it in, smile wide, and let the warmth do its magic. #SunnyVibes #GoldenHourGlow #SimpleJoys.",
+      "status": 1
+    }
+
+  },
+  {
+    "model": "my_blog.post",
+    "pk": null,
+    "fields": {
+      "title": "Lifelong Learning: Embracing Growth Every Day",
+      "slug": "Lifelong-Learning-Embracing-Growth-Every-Day",
+      "content": "Learning doesn’t end with a diploma — it’s a lifelong adventure. In a world that’s constantly evolving, the ability to keep growing, adapting, and exploring new ideas is one of our greatest strengths. Whether it’s picking up a new skill, reading a thought-provoking book, or simply asking better questions, continuous learning keeps our minds sharp and our perspectives fresh. It fuels creativity, deepens understanding, and opens doors we didn’t even know existed. The best part? You don’t need a classroom. Podcasts, online courses, conversations, mistakes — they’re all part of the curriculum. Every day offers a chance to learn something new, if we’re curious enough to notice. So stay curious. Stay humble. Keep learning — because the more we grow, the more we realize how much more there is to discover.",
+      "author": 1,
+      "created_on": "2025-11-18T22:58:00Z",
+      "updated_on": "2025-11-18T22:58:00Z",
+      "excerpt" :  "Learning never stops — and that’s the magic. Stay curious, keep growing, and let every day teach you something new.",
+      "status": 1
+    }
+  },
+  {
+    "model": "my_blog.post",
+    "pk": null,
+    "fields": {
+      "title": "Celebration: The Art of Honouring Life's Moments ",
+      "slug": "Celebration-The-Art-of-Honouring-Lifes-Moments",
+      "content":  "Learning doesn’t end with a diploma — it’s a lifelong adventure. In a world that’s constantly evolving, the ability to keep growing, adapting, and exploring new ideas is one of our greatest strengths. Whether it’s picking up a new skill, reading a thought-provoking book, or simply asking better questions, continuous learning keeps our minds sharp and our perspectives fresh. It fuels creativity, deepens understanding, and opens doors we didn’t even know existed. The best part? You don’t need a classroom. Podcasts, online courses, conversations, mistakes — they’re all part of the curriculum. Every day offers a chance to learn something new, if we’re curious enough to notice. So stay curious. Stay humble. Keep learning — because the more we grow, the more we realize how much more there is to discover.",
+      "author": 1,
+      "created_on": "2025-11-18T22:58:00Z",
+      "updated_on": "2025-11-18T22:58:00Z",
+      "excerpt" :  "Celebrate the moment, not just the milestone. Every joy — big or small — deserves to shine..",
       "status": 1
     }
   }
+
 ]
 
