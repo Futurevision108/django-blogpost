@@ -36,33 +36,16 @@ def post_detail(request, slug):
 
 
 # Category List View
-class CategoryList(generic.ListView):
-    queryset = Category.objects.all()
-    template_name = "category_list.html"
-    queryset = Category.objects.all()
-
-
-# Likes List View
-class LikesList(generic.ListView):
-    queryset = Like.objects.all()
-    template_name = "likes_list.html"
-
-
-# Comment List View
 class CommentList(generic.ListView):
     queryset = Comment.objects.all()
     template_name = "comment_list.html"
 
-<<<<<<< HEAD
-=======
 
-# Category list view
 class CategoryList(generic.ListView):
     queryset = Category.objects.all()
     template_name = "category_list.html"
 
 
-# Likes list view
 class LikesList(generic.ListView):
     queryset = Like.objects.all()
     template_name = "likes_list.html"
@@ -82,4 +65,3 @@ def like_post(request, slug):
         else:
             Like.objects.create(post=post, user=request.user)
     return redirect('post_detail', slug=slug)
->>>>>>> workingbranch
