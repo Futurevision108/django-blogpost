@@ -10,8 +10,7 @@ class PostAdmin (SummernoteModelAdmin):
     search_fields = ('title', 'content')
     list_filter = ('status', 'created_on', 'author')
     prepopulated_fields = {'slug': ('title',)}
-    summernote_fields = ('content', 'excerpt')
-
+    summernote_fields = ('content', 'excerpt')  # Enable Summernote editor for content and excerpt fields
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):

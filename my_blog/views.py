@@ -1,12 +1,33 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from .models import Post, Comment, Category, Like
 
 # Post list view
 class PostList(generic.ListView):
-    queryset = Post.objects.all()
+    queryset = Post.objects.filter(status=1)
     template_name = "blog/index.html"
     paginate_by = 2
+
+# Post detail view
+def post_detail(request, slug):
+    """
+    Display a single blog post:model:`my_blog.Post` along with its comments.
+
+    **Context**
+    ``post``
+        An instance of :model:`my_blog.Post`.
+
+    **Template:**
+    :template:`blog/post_detail.html`
+
+    """
+    post = get_object_or_404(Post, slug=slug, status=1)
+    comments = Comment.objects.filter(post=post)
+    return render(request, "blog/post_detail.html", {
+        "post": post,
+        "comments": comments,
+    },
+    )
 
 
 # Comment list view
