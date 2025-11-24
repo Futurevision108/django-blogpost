@@ -8,7 +8,26 @@
         <h1 class="post-title">{{ post.title }}</h1>
         <!-- Post author goes before the | the post's created date goes after -->
         <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
+        <!-- Post Category -->
+        <p>Category: {{ post.category.name }}</p>
       </div>
+      <!-- Post Body -->
+      <div class="post-body">{{ post.body|linebreaks }}</div>
+      <!-- Like button -->
+      <form action="{% url 'like_post' post.id %}" method="POST">
+        {% csrf_token %}
+        <button type="submit">Like ({{ post.likes.count }})</button>
+      </form>
+      <!-- Show who liked the post (optional) -->
+      <p>
+        {% if post.likes.count > 0 %} Liked by: {% for like in post.likes.all %}
+        {{ like.user.username }}{% if not forloop.last %}, {% endif %} {% endfor
+        %} {% else %} No likes yet. {% endif %}
+      </p>
+      <!-- Back to list -->
+    <p><a href="{% url 'post_list' %}">← Back to all posts</a></p>
+  </div>
+
       <div class="d-none d-md-block col-md-6 masthead-image">
         <img
           src="{% static 'static/images/visuals/blogheroimage.jpg' %}"
@@ -27,6 +46,25 @@
         <!-- The post content goes inside the card-text. -->
         <!-- Use the | safe filter inside the template tags -->
         <p class="card-text">{{ post.content | safe }}</p>
+
+        {% if user.is_authenticated %}
+        <form
+          action="{% url 'like_post' post.slug %}"
+          method="post"
+          class="d-inline"
+        >
+          {% csrf_token %}
+          <button type="submit" class="btn btn-sm btn-outline-primary">
+            Like ({{ post.likes.count }})
+          </button>
+        </form>
+        {% else %}
+        <a
+          href="{% url 'login' %}?next={{ request.path }}"
+          class="btn btn-sm btn-outline-primary"
+          >Log in to like</a
+        >
+        {% endif %}
       </div>
     </div>
   </div>

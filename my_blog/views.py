@@ -1,5 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
+
 from django.views import generic
+from django.contrib.auth.decorators import login_required
 from .models import Post, Comment, Category, Like
 
 # Post list view
@@ -46,3 +48,19 @@ class CategoryList(generic.ListView):
 class LikesList(generic.ListView):
     queryset = Like.objects.all()
     template_name = "likes_list.html"
+
+
+@login_required
+def like_post(request, slug):
+    """Toggle like/unlike for the current user on a post and redirect back.
+
+    The URL pattern uses a `slug` parameter so we accept `slug` here.
+    """
+    if request.method == 'POST':
+        post = get_object_or_404(Post, slug=slug, status=1)
+        existing = Like.objects.filter(post=post, user=request.user).first()
+        if existing:
+            existing.delete()
+        else:
+            Like.objects.create(post=post, user=request.user)
+    return redirect('post_detail', slug=slug)

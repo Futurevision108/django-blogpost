@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="container">
+  <h1>Learning Blog</h1>
+
+  <!-- Loop through all posts -->
+  {% for post in posts %}
+  <article class="post">
+    <h2>
+      <a href="{% url 'post_detail' post.slug %}"> {{ post.title }} </a>
+    </h2>
+
+    <!-- Short preview of the body -->
+    <p>{{ post.body|truncatewords:30 }}</p>
+
+    <!-- Show category if available -->
+    {% if post.category %}
+    <p><strong>Category:</strong> {{ post.category.name }}</p>
+    {% endif %}
+
+    <!-- Show like count -->
+    <p>❤️ Likes: {{ post.likes.count }}</p>
+
+    <!-- Link to detail page -->
+    <p><a href="{% url 'post_detail' post.slug %}">Read more...</a></p>
+  </article>
+  <hr />
+  {% empty %}
+  <p>No posts available yet.</p>
+  {% endfor %}
+</div>
+{% endblock %}
