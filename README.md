@@ -52,7 +52,7 @@ https://github.com/Futurevision108/django-blogpost
 # Credit:
 
 - Unsplash ( used for images)
-- code institute
+- code institute ( for code )
 - microsoft copilot
 - vscode copilot
 
